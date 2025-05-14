@@ -50,5 +50,6 @@ git-clone <https://github.com/TFF24/CSV-report>
 
 Формирование отчёта происходит по команде:
 python main.py filename(s).csv --report payout --format json (или table)
+
 Для просмотра доступных отчётов и форматов:
 python main.py --help
