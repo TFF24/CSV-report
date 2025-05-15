@@ -15,11 +15,12 @@
 
 
 Для добавления нового отчёта нужно создать новый файл в папке reports, например, average_rate.py, а затем прописать в нём дочерний класс для BaseReport, например:
+
 from .base import (BaseReport)
 class AverageRate(BaseReport):
-  @property #обязательное свойство, описанное в абстрактном классе
-  def name(self) -> str:
-    return 'average_rate'
+@property #обязательное свойство, описанное в абстрактном классе
+def name(self) -> str:
+  return 'average_rate'
   def generate(self, employees: List[Dict[str, Any]]) -> str: #объявление этого метода обязательно, так как он описан в абстрактном классе. 
     #логика метода
 
